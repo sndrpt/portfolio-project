@@ -1,3 +1,40 @@
+:root {
+  --primary-color: #3c3c3d;
+  --secondary-color: #d8e2df;
+  --heading-font: "Merriweather Sans", sans-serif;
+  --default-font: "Merriweather", serif;
+}
+
+body {
+  background: var(--secondary-color);
+  font-family: var(--default-font);
+}
+
 h1 {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: var(--heading-font);
+  font-size: 94px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 20px;
+  opacity: 70%;
+}
+
+.hero {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 160px 100px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    text-align: center;
+    padding: 70px 0;
+  }
 }
