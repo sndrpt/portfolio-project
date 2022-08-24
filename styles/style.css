@@ -70,6 +70,22 @@ img {
 }
 
 @media (max-width: 900px) {
+  h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
   .hero {
     text-align: center;
     padding: 70px 0;
