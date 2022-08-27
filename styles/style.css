@@ -56,18 +56,26 @@ img {
   margin: 0 auto;
 }
 
+.hero {
+    padding: 200px 160px 100px 160px;
+}
+
+.hero-about {
+    padding: 150px 160px 100px 160px;
+}
+
 .hero,
 .hero-about {
   background: var(--primary-color);
   color: var(--secondary-color);
-  padding: 200px 160px 100px 160px;
+  
 }
 
 .projects-preview {
   margin: 70px 160px;
 }
 
-.row {
+.homepage-content {
   background: var(--secondary-color);
   border-radius: 5px;
   padding: 40px;
@@ -145,4 +153,9 @@ img {
     display: block;
     margin: 30px 50px !important;
   }
+}
+
+@media (max-width: 1024px) {
+  .hero-about {
+    text-align: center;
 }
