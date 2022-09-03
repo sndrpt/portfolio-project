@@ -52,6 +52,13 @@ p {
   text-align: justify;
 }
 
+ .hero-about p {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 30px;
+  }
+
 img {
   margin: 0 auto;
 }
@@ -100,12 +107,19 @@ img {
   background: var(--secondary-color);
   color: var(--primary-color);
   padding: 15px 30px;
-  margin: 70px 0;
 }
 
 .hero-about .button-secondary:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.about-content {
+  margin-bottom: 70px;
+}
+
+.about-content h3 {
+  margin: 70px 0 50px 0;
 }
 
 @media (max-width: 900px) {
@@ -138,7 +152,7 @@ img {
   .hero,
   .hero-about {
     text-align: center;
-    padding: 70px 0;
+    padding: 70px 15px;
   }
 
   .projects-preview {
