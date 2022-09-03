@@ -23,7 +23,7 @@ h1 {
 
 .hero-about h1 {
   font-family: var(--heading-font);
-  font-size: 54px;
+  font-size: 50px;
 }
 
 h2 {
@@ -118,7 +118,7 @@ img {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 75px;
+    font-size: 48px !important;
   }
 
   h2 {
@@ -126,7 +126,7 @@ img {
   }
 
   .hero-about h2 {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
   }
 
   h4 {
@@ -140,26 +140,27 @@ img {
   }
 
   .hero-about p {
-    color: var(--secondary-color);
+    margin-bottom: 50px;
+    text-align: justify;
   }
 
   .hero,
   .hero-about {
     text-align: center;
-    padding: 70px 15px;
+    padding: 50px 15px;
   }
 
   .projects-preview {
     margin: 0;
   }
 
-  .button-branding {
-    display: block;
-  }
-
-  .hero-about .button-secondary {
+  .hero-about .button-branding {
     display: block;
     margin: 30px 50px !important;
+  }
+
+  .background {
+    padding-bottom: 10px;
   }
 }
 
