@@ -1,6 +1,7 @@
 :root {
   --secondary-color: rgba(37, 37, 38, 0.4);
   --primary-color: rgb(227, 231, 229);
+  --hover-color: rgb(169, 165, 182);
   --background-color: #330033;
   --heading-font: "Merriweather", serif;
   --default-font: "Merriweather Sans", sans-serif;
@@ -21,7 +22,7 @@ h1 {
   font-size: 96px;
 }
 
-.hero-about h1 {
+.hero-subpage h1 {
   font-family: var(--heading-font);
   font-size: 50px;
 }
@@ -32,7 +33,7 @@ h2 {
   line-height: 1.5;
 }
 
-.hero-about h2 {
+.hero-subpage h2 {
   font-size: 18px;
   opacity: 80%;
 }
@@ -42,6 +43,10 @@ h3 {
   font-family: var(--heading-font);
   font-size: 20px;
   opacity: 70%;
+}
+
+.about-content h3 {
+  margin: 70px 0 50px 0;
 }
 
 h4 {
@@ -59,7 +64,7 @@ p {
   text-align: justify;
 }
 
-.hero-about p {
+.hero-subpage p {
   color: var(--primary-color);
   font-size: 16px;
   line-height: 1.7;
@@ -70,16 +75,49 @@ img {
   margin: 0 auto;
 }
 
-.hero {
-  padding: 200px 160px 100px 160px;
+nav {
+  background: rgba(86, 63, 91, 0.3);
+  padding: 10px 30px;
 }
 
-.hero-about {
-  padding: 150px 160px 100px 160px;
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.active,
+nav li a:hover {
+  color: var(--hover-color);
+}
+
+.logo {
+  max-width: 60px;
+  float: left;
+  margin: 0 15px;
+}
+
+.hero {
+  padding: 150px 160px 70px 160px;
+}
+
+.hero-subpage {
+  padding: 120px 160px 100px 160px;
 }
 
 .hero,
-.hero-about {
+.hero-subpage {
   background: var(--secondary-color);
   color: var(--primary-color);
 }
@@ -95,25 +133,36 @@ img {
   margin: 50px 0;
 }
 
-.button-branding {
-  background: rgba(227, 231, 229, 0.1);
-  color: var(--primary-color);
-  padding: 20px 40px;
-  margin: 50px 0;
+.contact-content {
+  padding-bottom: 160px;
 }
 
-.button-branding:hover {
-  color: var(--primary-color);
-  background: none;
-  border: 1px solid #e3e7e5;
+.contact-info li {
+  list-style: none;
+}
+
+.contact-info {
+  font-size: 22px;
+  margin: 30px 0;
+  line-height: 40px;
 }
 
 .about-content {
   padding-bottom: 70px;
 }
 
-.about-content h3 {
-  margin: 70px 0 50px 0;
+.button-branding {
+  background: rgba(227, 231, 229, 0.1);
+  color: var(--primary-color);
+  padding: 20px 40px;
+  margin: 50px 0;
+  transition: all 200ms ease-in-out;
+}
+
+.button-branding:hover {
+  color: var(--primary-color);
+  background: none;
+  border: 1px solid #e3e7e5;
 }
 
 @media (max-width: 900px) {
@@ -125,7 +174,7 @@ img {
     font-size: 18px;
   }
 
-  .hero-about h2 {
+  .hero-subpage h2 {
     margin-bottom: 20px;
   }
 
@@ -139,22 +188,27 @@ img {
     font-size: 20px;
   }
 
-  .hero-about p {
+  .hero-subpage p {
     margin-bottom: 50px;
     text-align: justify;
   }
 
   .hero,
-  .hero-about {
+  .hero-subpage {
     text-align: center;
-    padding: 50px 15px;
+    padding: 70px 15px 30px;
   }
 
   .projects-preview {
     margin: 0;
+    text-align: center;
   }
 
-  .hero-about .button-branding {
+  .projects-preview .button-branding {
+    margin-bottom: 20px;
+  }
+
+  .hero-subpage .button-branding {
     display: block;
     margin: 30px 50px !important;
   }
@@ -162,10 +216,18 @@ img {
   .background {
     padding-bottom: 10px;
   }
+
+  .contact-content {
+    padding-bottom: 160px;
+  }
 }
 
 @media (max-width: 1024px) {
-  .hero-about {
+  .hero-subpage {
     text-align: center;
+  }
+
+  .projects-preview {
+    margin: 10px;
   }
 }
