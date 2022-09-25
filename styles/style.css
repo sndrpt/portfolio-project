@@ -176,10 +176,17 @@ nav li a:hover {
 }
 
 .tools-tech {
+  background: var(--background-color);
+  border-radius: 8px;
+  margin: 60px 20px;
+  padding: 50px 0;
+}
+
+.tools-tech-pictures {
   margin: 80px 0;
 }
 
-.tools-tech img {
+.tools-tech-pictures img {
   max-height: 120px;
   margin-bottom: 15px;
 }
@@ -203,11 +210,10 @@ nav li a:hover {
 footer .contact-box {
   background: var(--background-color);
   border-radius: 8px;
-  margin: 60px 20px;
 }
 
 .shecodes-profile {
-  padding: 80px;
+  padding: 60px;
   margin-bottom: 100px;
 }
 
@@ -354,20 +360,21 @@ footer .footer-information-github {
     margin: 30px 20px;
   }
 
-  .tools-tech .row {
+  .tools-tech {
+    margin: 30px 0;
+    padding: 20px 0;
+  }
+
+  .tools-tech-pictures .row {
     padding: 0 !important;
   }
 
-  .tools-tech .col {
+  .tools-tech-pictures .col {
     padding: 15px;
   }
 
-  .tools-tech img {
+  .tools-tech-pictures img {
     max-height: 80px;
-  }
-
-  .tools-tech p {
-    font-size: 12px;
   }
 
   .shecodes-profile {
