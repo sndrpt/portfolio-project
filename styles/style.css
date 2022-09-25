@@ -238,6 +238,11 @@ footer .button-branding {
   margin: 25px 0;
 }
 
+footer .footer-information-github {
+  font-size: 14px;
+  margin-top: 100px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 48px !important;
