@@ -64,8 +64,7 @@ p {
 }
 
 .hero-subpage p {
-  color: var(--primary-color);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.7;
   padding-top: 30px;
 }
@@ -164,7 +163,25 @@ nav li a:hover {
 }
 
 .about-content {
-  padding-bottom: 70px;
+  margin-top: 100px;
+  padding-bottom: 0;
+}
+
+.about-content .description {
+  margin: 30px 120px;
+}
+
+.about-content p {
+  font-size: 24px;
+}
+
+.tools-tech {
+  margin: 80px 0;
+}
+
+.tools-tech img {
+  max-height: 170px;
+  margin-bottom: 15px;
 }
 
 .button-branding {
@@ -182,14 +199,24 @@ nav li a:hover {
   border: 1px solid #e3e7e5;
 }
 
+.shecodes-profile,
+footer .contact-box {
+  background: var(--background-color);
+  border-radius: 8px;
+  margin: 60px 20px;
+}
+
+.shecodes-profile {
+  padding: 80px;
+  margin-bottom: 100px;
+}
+
 footer {
   margin: 60px 0 20px 0;
 }
 
 footer .contact-box {
-  background: var(--background-color);
-  border-radius: 8px;
-  margin: 60px 160px;
+  margin: 60px 250px;
   padding: 70px;
 }
 
@@ -261,8 +288,13 @@ footer .footer-information-github {
     margin-bottom: 20px;
   }
 
-  h4 {
+  h3 {
     font-size: 36px;
+  }
+
+  h4 {
+    font-size: 26px;
+    line-height: 1.7;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -291,6 +323,15 @@ footer .footer-information-github {
     padding: 70px 15px 30px;
   }
 
+  .hero-subpage .button-branding {
+    text-align: center;
+    margin: 15px 0 !important;
+  }
+
+  .about-hero img {
+    margin-top: 30px;
+  }
+
   .projects-preview {
     margin: 0;
     text-align: center;
@@ -300,17 +341,42 @@ footer .footer-information-github {
     margin-bottom: 20px;
   }
 
-  .hero-subpage .button-branding {
-    display: block;
-    margin: 30px 50px !important;
+  .navigation-buttons {
+    text-align: center;
   }
 
   .background {
     padding-bottom: 10px;
   }
 
+  .about-content .description,
+  .about-hero p {
+    margin: 30px 20px;
+  }
+
+  .tools-tech .row {
+    padding: 0 !important;
+  }
+
+  .tools-tech .col {
+    padding: 15px;
+  }
+
+  .tools-tech img {
+    max-height: 80px;
+  }
+
+  .tools-tech p {
+    font-size: 16px;
+  }
+
+  .shecodes-profile {
+    padding: 30px;
+    margin: 0 0 60px 0;
+  }
+
   .contact-content {
-    padding-bottom: 160px;
+    padding-bottom: 10px;
   }
 
   .contact-info {
@@ -334,5 +400,13 @@ footer .footer-information-github {
 
   .projects-preview {
     margin: 10px;
+  }
+
+  .certificate-picture {
+    margin-top: 40px;
+  }
+
+  footer .contact-box {
+    margin: 60px 50px;
   }
 }
