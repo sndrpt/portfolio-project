@@ -29,20 +29,19 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Front-end developer - Sandra Pytlik</title>
   </head>
   <body>
     <div class="background">
       <div class="navigation-bar">
-        <nav class="d-flex justify-content-between align-items-center">
-          <a href="/" title="Homepage">
-            <img
-              src="images/sandra-logo.png"
-              class="logo d-none d-md-block"
-              alt="Sandra Logo"
-            />
-          </a>
+        <nav class="d-flex align-items-center">
           <ul>
             <li>
               <a href="/" title="Homepage" class="active">Home</a>
@@ -71,31 +70,26 @@
         >
       </div>
       <div class="container-fluid">
+        <h4 class="d-none d-lg-block text-center p-4">Featured</h4>
         <div class="projects-preview">
-          <h4 class="d-none d-lg-block text-center p-4">Featured projects</h4>
           <div
-            class="row homepage-content align-items-center justify-content-center shadow"
+            class="homepage-content align-items-center justify-content-center shadow"
           >
-            <div class="col d-none d-lg-block m-5">
+            <div class="d-lg-block m-4">
+              <h3>React weather app</h3>
               <img
-                src="images/weather-app.png"
+                src="images/react-weather-app.png"
                 alt="Weather app preview"
-                class="img-fluid w-100 weather-image shadow rounded p-3 d-lg-block"
+                class="img-fluid w-50 weather-image shadow rounded p-3 d-lg-block"
               />
             </div>
-            <div class="col">
-              <h4>Weather app</h4>
-              <p>
-                My first very exciting project where I learnt how to use API
-                technology and to build a search engine. Built with HTML, CSS
-                and JavaScript.
-              </p>
+            <div class="d-block">
               <a
-                href="https://chic-pudding-b5fa2c.netlify.app/"
+                href="https://glittering-bublanina-9cb523.netlify.app/"
                 class="btn button-branding shadow"
                 target="_blank"
                 title="Weather app link"
-                >Launch Weather App</a
+                >Launch weather App</a
               >
             </div>
           </div>
