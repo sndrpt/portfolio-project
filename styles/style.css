@@ -1,7 +1,7 @@
 :root {
-  --secondary-color: rgba(37, 37, 38, 0.1);
-  --primary-color: rgb(36, 34, 36);
-  --hover-color: rgb(126, 42, 127);
+  --secondary-color: rgba(0, 0, 0);
+  --primary-color: rgb(178, 200, 149);
+  --hover-color: #354930;
   --background-color: rgba(94, 94, 94, 0.1);
   --heading-font: "Merriweather", serif;
   --default-font: "Merriweather Sans", sans-serif;
@@ -13,7 +13,7 @@ body {
 
 .background {
   padding-bottom: 20px;
-  background-color: var(--secondary-color);
+  background-color: rgba(0, 0, 0);
 }
 
 h1 {
@@ -74,8 +74,10 @@ img {
 }
 
 .navigation-bar {
-  background: var(--secondary-color);
+  background: rgba(0, 0, 0, 0.1);
   padding: 15px 30px;
+  position: fixed;
+  top: 0;
 }
 
 nav ul {
@@ -109,13 +111,17 @@ nav li a:hover {
 
 .hero {
   padding: 170px 160px 140px 160px;
+  background-image: url("../images/background.jpg");
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-subpage {
   padding: 100px 160px 90px 160px;
 }
 
-.hero,
 .hero-subpage {
   background: var(--secondary-color);
   color: var(--primary-color);
