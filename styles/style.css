@@ -1,9 +1,9 @@
 :root {
   --secondary-color: rgba(0, 0, 0);
-  --primary-color: rgb(225, 242, 201);
-  --hover-color: #80af73;
+  --primary-color: rgb(230, 231, 229);
+  --hover-color: #858585;
   --extra-color: rgb(224, 161, 110);
-  --background-color: rgba(94, 94, 94, 0.1);
+  --background-color: rgba(255, 255, 255, 0.6);
   --default-font: "Raleway", sans-serif;
   --heading-font: "Roboto Slab", serif;
 }
@@ -14,7 +14,7 @@ body {
 
 .background {
   padding-bottom: 20px;
-  background-color: rgb(15, 14, 14);
+  background-color: rgb(214, 214, 214);
 }
 
 .container-fluid {
@@ -29,16 +29,15 @@ h1 {
 
 .hero-subpage h1 {
   font-family: var(--heading-font);
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 400;
 }
 
 h2 {
   color: var(--hover-color);
-  font-family: var(--heading-font);
-  font-size: 32px;
+  font-family: var(--default-font);
+  font-size: 20px;
   font-weight: 200;
-  font-style: italic;
   line-height: 1.5;
 }
 
@@ -59,18 +58,18 @@ h3 {
 }
 
 h4 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 64px;
   font-weight: bolder;
   margin: 20px 0;
+  padding: 40px;
 }
 
 h5 {
   font-family: var(--default-font);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 40px;
-  font-style: italic;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .featured-header {
@@ -78,13 +77,14 @@ h5 {
 }
 
 p {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 18px;
   line-height: 1.5;
   text-align: justify;
 }
 
 .hero-subpage p {
+  color: var(--primary-color);
   font-size: 18px;
   line-height: 1.7;
   padding-top: 30px;
@@ -95,7 +95,7 @@ img {
 }
 
 .navigation-bar {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   padding: 15px 30px;
   position: fixed;
   top: 0;
@@ -121,15 +121,19 @@ nav li a {
 }
 
 .active {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.active,
 nav li a:hover {
   color: var(--hover-color);
 }
 
 .hero {
+  text-align: center;
+}
+
+.hero,
+.hero-subpage {
   padding: 170px 160px 140px 160px;
   background-image: url("../images/background.jpg");
   min-height: 500px;
@@ -138,15 +142,10 @@ nav li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
 .hero-subpage {
   padding: 100px 160px 90px 160px;
-}
-
-.hero-subpage {
-  background: var(--secondary-color);
   color: var(--primary-color);
 }
 
@@ -193,16 +192,14 @@ nav li a:hover {
 }
 
 .about-content {
-  margin-top: 100px;
+  margin-top: 70px;
   padding-bottom: 0;
 }
 
-.about-content .description {
-  margin: 30px 120px;
-}
-
-.about-content p {
-  font-size: 18px;
+.about-content h6 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 .tools-tech {
@@ -222,7 +219,7 @@ nav li a:hover {
 }
 
 .button-branding {
-  background: rgba(50, 89, 41, 0.7);
+  background: rgba(48, 48, 48, 0.7);
   border-radius: 0;
   color: #fff;
   font-family: var(--default-font);
@@ -262,7 +259,7 @@ footer .contact-box {
 }
 
 footer .contact-box h5 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: var(--heading-font);
   font-size: 28px;
   font-weight: bolder;
@@ -275,7 +272,7 @@ footer .contact-box p {
 
 footer .email-link,
 footer .social-links {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 28px;
   text-decoration: none;
 }
@@ -338,6 +335,11 @@ footer .footer-information-github {
     line-height: 1.7;
     text-align: center;
     margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  h5 {
+    font-size: 23px;
   }
 
   p {
@@ -364,17 +366,20 @@ footer .footer-information-github {
   }
 
   .active {
-    color: #513962;
+    color: #717171;
+    font-weight: bolder;
   }
 
   .hero {
     background-attachment: scroll;
+    padding-bottom: 0;
+    min-height: 400px;
   }
 
   .hero,
   .hero-subpage {
     text-align: center;
-    padding: 70px 15px 30px;
+    padding: 90px 15px 0 15px;
   }
 
   .hero-subpage .button-branding {
@@ -454,7 +459,7 @@ footer .footer-information-github {
   }
 
   .projects-preview {
-    margin: 10px;
+    margin: 0;
   }
 
   .certificate-picture {
