@@ -3,7 +3,7 @@
   --primary-color: rgb(230, 231, 229);
   --hover-color: #858585;
   --extra-color: rgb(224, 161, 110);
-  --background-color: rgba(255, 255, 255, 0.6);
+  --background-color: rgba(255, 255, 255, 0.7);
   --default-font: "Raleway", sans-serif;
   --heading-font: "Roboto Slab", serif;
 }
@@ -29,7 +29,7 @@ h1 {
 
 .hero-subpage h1 {
   font-family: var(--heading-font);
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 400;
 }
 
@@ -42,7 +42,7 @@ h2 {
 }
 
 .hero-subpage h2 {
-  font-size: 22px;
+  font-size: 30px;
   opacity: 80%;
 }
 
@@ -51,10 +51,6 @@ h3 {
   font-size: 24px;
   font-weight: 400;
   opacity: 70%;
-}
-
-.about-content h3 {
-  margin: 70px 0 50px 0;
 }
 
 h4 {
@@ -85,9 +81,11 @@ p {
 
 .hero-subpage p {
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
-  padding-top: 30px;
+  margin: auto;
+  max-width: 650px;
+  padding: 50px;
 }
 
 img {
@@ -132,8 +130,7 @@ nav li a:hover {
   text-align: center;
 }
 
-.hero,
-.hero-subpage {
+.hero {
   padding: 170px 160px 140px 160px;
   background-image: url("../images/background.jpg");
   min-height: 500px;
@@ -145,8 +142,14 @@ nav li a:hover {
 }
 
 .hero-subpage {
-  padding: 100px 160px 90px 160px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("../images/aurora.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  padding: 170px 160px 140px 160px;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .homepage-content {
@@ -192,25 +195,29 @@ nav li a:hover {
 }
 
 .about-content {
-  margin-top: 70px;
+  margin-top: 0;
   padding-bottom: 0;
 }
 
 .about-content h6 {
   font-size: 20px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .tools-tech {
-  background: var(--background-color);
-  border-radius: 8px;
-  margin: 60px 20px;
-  padding: 50px 0;
+  background-image: url("../images/clouds.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tools-tech-pictures {
-  margin: 80px 0;
+  margin: auto;
+  padding: 50px;
 }
 
 .tools-tech-pictures img {
@@ -230,23 +237,33 @@ nav li a:hover {
 
 .button-branding:hover {
   color: #fff;
-  background: rgba(53, 53, 53, 0.3);
-  border: 1px solid #e3e7e5;
+  background: rgba(53, 53, 53, 0.9);
+  border: 1px solid #ffffff;
 }
 
 .button-featured {
   background: rgba(224, 161, 110, 0.6);
 }
 
-.shecodes-profile,
-footer .contact-box {
-  background: var(--background-color);
-  border-radius: 8px;
+.shecodes-profile-content {
+  background-image: url("../images/clouds.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
 }
 
-.shecodes-profile {
-  padding: 60px;
-  margin-bottom: 100px;
+.navigation-buttons {
+  margin-bottom: 70px;
+}
+
+.button-shecdoes-profile {
+  display: block;
+  margin: auto;
+  max-width: 240px;
 }
 
 footer {
@@ -387,10 +404,6 @@ footer .footer-information-github {
     margin: 15px 0 !important;
   }
 
-  .about-hero img {
-    margin-top: 30px;
-  }
-
   .projects-preview {
     margin: 0;
     text-align: center;
@@ -419,7 +432,7 @@ footer .footer-information-github {
   }
 
   .tools-tech-pictures .row {
-    padding: 0 !important;
+    padding: 70px !important;
   }
 
   .tools-tech-pictures .col {
