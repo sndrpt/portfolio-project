@@ -145,6 +145,8 @@ nav li a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url("../images/aurora.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
   background-size: cover;
   min-height: 300px;
   padding: 170px 160px 140px 160px;
@@ -246,7 +248,7 @@ nav li a:hover {
 }
 
 .shecodes-profile-content {
-  background-image: url("../images/clouds.jpg");
+  background-image: url("../images/background.jpg");
   min-height: 500px;
   background-attachment: fixed;
   background-color: var(--secondary-color);
@@ -264,6 +266,15 @@ nav li a:hover {
   display: block;
   margin: auto;
   max-width: 240px;
+}
+
+.projects-preview p {
+  color: #e3e7e5;
+  text-align: center;
+}
+
+.projects-preview h4 {
+  color: var(--primary-color);
 }
 
 footer {
@@ -424,6 +435,7 @@ footer .footer-information-github {
   .about-content .description,
   .about-hero p {
     margin: 30px 20px;
+    padding: 15px;
   }
 
   .tools-tech {
@@ -432,7 +444,7 @@ footer .footer-information-github {
   }
 
   .tools-tech-pictures .row {
-    padding: 70px !important;
+    padding: 15px !important;
   }
 
   .tools-tech-pictures .col {
@@ -440,12 +452,16 @@ footer .footer-information-github {
   }
 
   .tools-tech-pictures img {
-    max-height: 80px;
+    max-height: 180px;
   }
 
   .shecodes-profile {
-    padding: 30px;
+    padding: 15px;
     margin: 0 0 60px 0;
+  }
+
+  .shecodes-profile-content {
+    padding: 15px;
   }
 
   .contact-content {

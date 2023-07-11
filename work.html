@@ -36,13 +36,6 @@
     <div class="background">
       <div class="navigation-bar">
         <nav class="d-flex justify-content-between align-items-center">
-          <a href="/" title="Homepage">
-            <img
-              src="images/sandra-logo.png"
-              class="logo d-none d-md-block"
-              alt="Sandra Logo"
-            />
-          </a>
           <ul>
             <li>
               <a href="/" title="Homepage">Home</a>
@@ -56,27 +49,72 @@
               >
             </li>
             <li>
-              <a href="/contact.html" title="Contact Sandra">Contact</a>
+              <a href="#contact" title="Contact Sandra">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="hero-subpage">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xl">
-            <h1>Take a look at what I've been working on!</h1>
-          </div>
-          <div class="col-xl">
-            <img
-              src="images/web-developer.png"
-              class="img-fluid rounded w-75 d-lg-block"
-              alt="Web developer picture"
-            />
-          </div>
+        <div class="align-items-center justify-content-center">
+          <h1>Take a look at what I've been working on 👩🏻‍💻</h1>
         </div>
       </div>
       <div class="container-fluid">
+        <h4></h4>
         <div class="projects-preview">
+          <div
+            class="row homepage-content align-items-center justify-content-center shadow"
+          >
+            <div class="col react-app-description">
+              <h4>React weather app</h4>
+              <p>
+                Latest project coded in React. Very satisfying lesson about
+                API's and building a search engine.
+              </p>
+              <a
+                href="https://glittering-bublanina-9cb523.netlify.app/"
+                class="btn button-branding shadow"
+                target="_blank"
+                title="React weather app link"
+                >Launch Weather App</a
+              >
+            </div>
+
+            <div class="col d-none d-lg-block m-5">
+              <img
+                src="images/weather-app.png"
+                alt="Weather app preview"
+                class="img-fluid w-100 weather-image shadow rounded p-3 d-lg-block"
+              />
+            </div>
+          </div>
+
+          <div
+            class="row homepage-content align-items-center justify-content-center shadow"
+          >
+            <div class="col d-none d-lg-block m-5">
+              <img
+                src="images/travel-app.png"
+                alt="Travel app preview"
+                class="img-fluid w-100 art-image shadow rounded p-3 d-lg-block"
+              />
+            </div>
+            <div class="col">
+              <h4>Travel landing page</h4>
+              <p>
+                A static website coded in HTML and CSS. The main goal was to
+                practice embedding and using filters.
+              </p>
+              <a
+                href="https://stunning-cupcake-561216.netlify.app/"
+                class="btn button-branding shadow"
+                target="_blank"
+                title="Travel link"
+                >Launch Travel landing page</a
+              >
+            </div>
+          </div>
+
           <div
             class="row homepage-content align-items-center justify-content-center shadow"
           >
@@ -132,23 +170,7 @@
         </div>
       </div>
       <footer>
-        <div class="contact-box justify-content-between d-none d-xl-flex">
-          <div>
-            <h5>Work Inquiry</h5>
-            <p class="text-muted">
-              Let's work together and I'll help you with all my best.
-            </p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              class="btn button-branding shadow"
-              title="Contact Sandra"
-              >Contact me</a
-            >
-          </div>
-        </div>
-        <div class="d-flex justify-content-center mb-5">
+        <div id="contact" class="d-flex justify-content-center mb-5">
           <a
             href="mailto:skpytlik.no@gmail.com"
             class="email-link"
