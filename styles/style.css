@@ -142,19 +142,18 @@ nav li a:hover {
 }
 
 .hero-subpage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url("../images/aurora.jpg");
+  background-image: url("../images/aurora.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 500px;
   background-size: cover;
-  min-height: 300px;
+  min-height: 500px;
   padding: 170px 160px 140px 160px;
   color: var(--primary-color);
   text-align: center;
 }
 
-.homepage-content {
+.homepage-content,
+.projects-preview {
   background-image: url("../images/clouds.jpg");
   min-height: 500px;
   background-attachment: fixed;
@@ -262,7 +261,7 @@ nav li a:hover {
   margin-bottom: 70px;
 }
 
-.button-shecdoes-profile {
+.button-shecodes-profile {
   display: block;
   margin: auto;
   max-width: 240px;
@@ -410,9 +409,14 @@ footer .footer-information-github {
     padding: 90px 15px 0 15px;
   }
 
+  .work-hero {
+    min-height: 270px;
+  }
+
   .hero-subpage .button-branding {
     text-align: center;
     margin: 15px 0 !important;
+    background-attachment: scroll;
   }
 
   .projects-preview {
